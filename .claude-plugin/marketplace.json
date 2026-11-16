@@ -1,0 +1,21 @@
+{
+  "name": "a-kit",
+  "owner": {
+    "name": "ayyta"
+  },
+  "metadata": {
+    "description": "General-purpose Claude Code plugins for everyday coding work"
+  },
+  "plugins": [
+    {
+      "name": "dev-loop",
+      "source": "./plugins/dev-loop",
+      "description": "Skills for the build-verify-ship loop: verify a change before calling it done."
+    },
+    {
+      "name": "astack",
+      "source": "./plugins/astack",
+      "description": "A router skill that matches a task to a playbook, plus playbooks for common coding work."
+    }
+  ]
+}

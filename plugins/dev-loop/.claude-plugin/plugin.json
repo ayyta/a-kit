@@ -1,0 +1,8 @@
+{
+  "name": "dev-loop",
+  "version": "0.1.0",
+  "description": "Skills for the build-verify-ship loop: verify a change before calling it done.",
+  "author": {
+    "name": "ayyta"
+  }
+}
