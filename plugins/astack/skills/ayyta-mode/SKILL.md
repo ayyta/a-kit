@@ -14,6 +14,10 @@ Read the task, then pick one playbook from the table. If two fit, pick the one f
 | Task | Playbook |
 |---|---|
 | Write or change a skill | `playbooks/authoring-a-skill.md` |
+| Read-only question: how does X work, why was Y built this way, should we do X or Y | `playbooks/investigation.md` |
+| A reported defect to reproduce, root-cause and fix | `playbooks/bug-fix.md` |
+| A symptom in a live process (leak, idle-CPU spin, glitch) to diagnose, not fix | `playbooks/runtime-forensics.md` |
+| A saved profile, trace, spindump or heap snapshot to diagnose, not fix | `playbooks/trace-forensics.md` |
 
 If nothing fits, say so in one line and work normally. Do not force a playbook onto a task it was not written for.
 
