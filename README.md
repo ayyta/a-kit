@@ -7,7 +7,7 @@ A personal Claude Code plugin marketplace of general-purpose coding skills. Noth
 | Plugin | Skills | Purpose |
 |---|---|---|
 | `dev-loop` | `verify-this` | Run the project's own checks on a change and report what ran and what could not be checked |
-| `astack` | `astack-mode` | Match a task to a playbook and follow it. Playbooks: `authoring-a-skill` |
+| `astack` | `astack-mode`, `blast-radius`, `principle-*` | Match a task to a playbook and follow it. Playbooks: `authoring-a-skill`, `bug-fix`. Bug-fix principles: `fix-root-causes`, `laziness-protocol`, `subtract-before-you-add`, `prove-it-works`, `explain-the-number` |
 
 ## Install
 
