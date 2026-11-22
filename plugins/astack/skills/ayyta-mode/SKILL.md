@@ -1,9 +1,9 @@
 ---
-name: astack-mode
+name: ayyta-mode
 description: Match a task to a playbook and follow it step by step. Use when starting any task that needs rigor, or when asked to write or change a skill.
 ---
 
-# astack-mode
+# ayyta-mode
 
 Pick the playbook that fits the task, then follow its steps in order. Do not skip steps, and do not invent steps the playbook does not have.
 
