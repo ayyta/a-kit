@@ -16,6 +16,7 @@ Read the task, then pick one playbook from the table. If two fit, pick the one f
 | Write or change a skill | `playbooks/authoring-a-skill.md` |
 | Read-only question: how does X work, why was Y built this way, should we do X or Y | `playbooks/investigation.md` |
 | A reported defect to reproduce, root-cause and fix | `playbooks/bug-fix.md` |
+| A new feature or change to design, build and ship | `playbooks/feature.md` |
 | A symptom in a live process (leak, idle-CPU spin, glitch) to diagnose, not fix | `playbooks/runtime-forensics.md` |
 | A saved profile, trace, spindump or heap snapshot to diagnose, not fix | `playbooks/trace-forensics.md` |
 
@@ -26,7 +27,8 @@ If nothing fits, say so in one line and work normally. Do not force a playbook o
 1. Read the whole playbook file before acting.
 2. Turn its steps into a todo list.
 3. Work through the list. Mark a step done only when it is done.
-4. End with the reply format the playbook names.
+4. When the playbook says to open a PR, follow `playbooks/opening-a-pr.md`. Do not restate its steps.
+5. End with the reply format the playbook names.
 
 ## Autonomy
 
@@ -40,6 +42,8 @@ If nothing fits, say so in one line and work normally. Do not force a playbook o
 
 ## Subagents
 
+**Worker rules.** The first line of every subagent kickoff is `Read <path>/worker.md before anything else.`, with `<path>` the absolute path of this skill's folder. `worker.md` sets the bar, the PR format, and when a worker may stop. For a design with several valid shapes, use the **arena** skill. For a contested design before shipping, use the **interrogate** skill.
+
 **Defaults for every subagent spawn.** Run in the background, pass file pointers instead of inlined context, and set an explicit model per role.
 
 **Match the model to the job.** Start from the default model for the role and set the reasoning level the job needs. Raise it for the hardest or subtlest work. Lower it for judgment calls, and lower it further for routine work. Choose fast or standard speed the same way. If a spawn rejects a model, never pass it again. Fall back to the closest valid model of the same family, then omit the model, and say so.
@@ -50,4 +54,4 @@ You own every subagent's work. Review the diff and write your own summary. A sec
 
 ## Adding a playbook
 
-Add one file under `playbooks/` and one row to the table above. Write it with `playbooks/authoring-a-skill.md`.
+Add one file under `playbooks/` and one row to the table above. A shared step that other playbooks invoke, such as `opening-a-pr.md`, takes no row. Reference it from step 2 instead. Write it with `playbooks/authoring-a-skill.md`.
