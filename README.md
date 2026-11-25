@@ -35,7 +35,7 @@ Inside a session, `/reload-plugins` picks up edits. Skills run as `/dev-loop:ver
 
 ## Credits
 
-These skills are copied unchanged from [cursor/plugins](https://github.com/cursor/plugins) under the MIT License:
+These skills are copied from [cursor/plugins](https://github.com/cursor/plugins) under the MIT License. The only change sets `disable-model-invocation: false` so that the agent can run them.
 
 - `astack/skills/unslop` and `astack/skills/technical-writing` come from `pstack`, copyright (c) 2026 Lauren Tan.
 - `astack/skills/deslop` comes from `cursor-team-kit`, copyright (c) 2026 Cursor.
