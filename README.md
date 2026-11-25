@@ -32,3 +32,10 @@ Inside a session, `/reload-plugins` picks up edits. Skills run as `/dev-loop:ver
 - Keep every plugin general. Project-specific plugins belong in that project's own repo or in a separate private marketplace.
 - Add a layer only after the previous one has caught a real mistake.
 - Review any third-party plugin before installing it: hooks, MCP servers, and `bin/` run with your user privileges.
+
+## Credits
+
+These skills are copied unchanged from [cursor/plugins](https://github.com/cursor/plugins) under the MIT License:
+
+- `astack/skills/unslop` and `astack/skills/technical-writing` come from `pstack`, copyright (c) 2026 Lauren Tan.
+- `astack/skills/deslop` comes from `cursor-team-kit`, copyright (c) 2026 Cursor.
